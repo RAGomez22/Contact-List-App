@@ -27,13 +27,11 @@ export default function ContactList({ setSelectedContactId }) {
         }
         fetchContacts()
     }, []);
+
+    //code below establishes contact list table 
     return (
 
         <>
-            <input type='text' onChange={e => setBoo(e.target.value)} />
-            {
-                boo
-            }
             <table>
                 <thead>
                     <tr>

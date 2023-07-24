@@ -3,6 +3,7 @@ import React, { useEffect, useState } from "react";
 
 export default function SelectedContact({ selectedContactId, setSelectedContactId }) {
     const [contact, setContact] = useState()
+    
     useEffect(() => {
         async function fetchContacts() {
             try {
@@ -21,9 +22,10 @@ export default function SelectedContact({ selectedContactId, setSelectedContactI
     return (
         //make an onclick method that will dropdown the contacts usernamme and website
         <>
+        
             <button onClick={(() => {
                 setSelectedContactId(undefined)
-
+              
             })}> Back</button>
 
 
